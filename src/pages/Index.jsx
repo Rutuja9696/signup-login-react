@@ -7,7 +7,7 @@ class Index extends Component {
         <Link to="/signup">
           <button>Signup</button>
         </Link>
-        <Link to="">
+        <Link to="/login">
           <button>Login</button>
         </Link>
       </div>
