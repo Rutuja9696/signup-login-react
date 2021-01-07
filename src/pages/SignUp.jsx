@@ -1,4 +1,5 @@
 import { Component } from "react";
+import SignUpForm from "../components/SignUpForm";
 
 class SignUp extends Component {
   render() {
@@ -6,7 +7,7 @@ class SignUp extends Component {
       <div>
         <form>
           <div>
-            <h1>Signup page</h1>
+            <SignUpForm />
             <button>Submit</button>
             <button>Reset</button>
           </div>
