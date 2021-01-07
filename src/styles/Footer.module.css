@@ -1,0 +1,60 @@
+body {
+  padding-bottom: 100px;
+}
+#copyright {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  background: #333333;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex: 0 0 25%;
+}
+
+#copyright p {
+  display: inline;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: white;
+}
+
+#copyright a {
+  text-decoration: none;
+  color: white;
+}
+
+ul.contact {
+  list-style: none;
+}
+
+ul.contact li {
+  display: inline;
+  font-size: 1em;
+  padding: 10px;
+}
+
+ul.contact li span {
+  margin: 20px;
+}
+
+ul.contact li a {
+  color: white;
+}
+
+ul.contact li a:before {
+  display: inline;
+  background: #4c93b9;
+  line-height: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.insta {
+  border-radius: 10px;
+  color: rgb(101, 204, 235);
+}

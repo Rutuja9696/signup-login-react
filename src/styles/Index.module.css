@@ -1,0 +1,27 @@
+.divIndex {
+  min-height: 100vh;
+  background-color: rgb(13, 13, 75);
+  display: flex;
+  flex-direction: column;
+}
+
+.indexh1 {
+  margin: 300px 200px 0px;
+  text-align: center;
+  color: #eee;
+  font-size: 36px;
+}
+.divButton {
+  text-align: center;
+}
+.divButton button {
+  margin: 4%;
+  padding: 8px 10px;
+  border-radius: 5%;
+  font-size: 16px;
+}
+.indexh1:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: rgb(124, 240, 234);
+}
