@@ -1,20 +1,26 @@
 import { Component } from "react";
 import SignUpForm from "../components/SignUpForm";
 import FormElementStyles from "../styles/Form.module.css";
+import url from "../components/ApiCall";
 
 class SignUp extends Component {
   signupUser = (event) => {
     event.preventDefault();
     let form = event.target;
-    let formObj = new FormData();
-    formObj.append("name", form.name.value);
-    formObj.append("email", form.email.value);
-    formObj.append("password", form.password.value);
-
-    fetch(url, {
+    let formObj = {
+      name: form.name.value,
+      email: form.email.value,
+      password: form.password.value,
+      confirmPassword: form.confirmPassword.value,
+    };
+    console.log(formObj);
+    fetch(url + "user/signup", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
       mode: "cors",
-      body: formObj,
+      body: JSON.stringify(formObj),
     })
       .then((response) => {
         return response.json();
@@ -44,7 +50,6 @@ class SignUp extends Component {
               >
                 Sign Up
               </button>
-
               <button
                 type="reset"
                 value="Reset"
