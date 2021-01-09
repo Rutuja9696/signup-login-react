@@ -30,7 +30,7 @@ class SignUpForm extends Component {
           <br />
           <div>
             <input
-              type="text"
+              type="password"
               name="password"
               className={FormElementStyles.inputField}
               required
@@ -40,7 +40,7 @@ class SignUpForm extends Component {
           <br />
           <div>
             <input
-              type="text"
+              type="password"
               name="confirmPassword"
               className={FormElementStyles.inputField}
               required

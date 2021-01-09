@@ -5,7 +5,7 @@ import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 function Footer() {
   return (
     <div id={footerStyles.copyright}>
-      <p>&copy; Designed and developed by Rutuja.</p>
+      <p>&nbsp;&nbsp; &copy; Designed and developed by Rutuja.</p>
       <ul className={footerStyles.contact}>
         <li>
           <a href="/#">
