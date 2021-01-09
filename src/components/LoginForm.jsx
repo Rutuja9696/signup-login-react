@@ -22,7 +22,7 @@ class LoginForm extends Component {
             <br />
             <div>
               <input
-                type="text"
+                type="password"
                 name="password"
                 className={FormElementStyles.inputField}
                 required
