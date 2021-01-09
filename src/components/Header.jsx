@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import headerStyles from "../styles/Header.module.css";
-
+import logo from "../image/logo.png";
 class Header extends Component {
   render() {
     return (
@@ -8,7 +8,7 @@ class Header extends Component {
         <div className={headerStyles.container}>
           <div id={headerStyles.logo}>
             <div id={headerStyles.titlePart}>
-              <img alt="logo" />
+              <img src={logo} alt="logo" />
             </div>
           </div>
         </div>
