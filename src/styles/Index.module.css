@@ -1,5 +1,6 @@
 .divIndex {
   min-height: 100vh;
+  width: 100%;
   background: rgb(13, 13, 75);
   display: flex;
   flex-direction: column;
