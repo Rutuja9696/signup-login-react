@@ -1,19 +1,23 @@
 import { Component } from "react";
 import LoginForm from "../components/LoginForm";
 import FormElementStyles from "../styles/Form.module.css";
+import url from "../components/ApiCall";
 
 class Login extends Component {
   loginUser = (event) => {
     event.preventDefault();
     let form = event.target;
-    let formObj = new FormData();
-    formObj.append("email", form.email.value);
-    formObj.append("password", form.password.value);
-
-    fetch(url, {
+    let formObj = {
+      email: form.email.value,
+      password: form.password.value,
+    };
+    fetch(url + "user/login", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
       mode: "cors",
-      body: formObj,
+      body: JSON.stringify(formObj),
     })
       .then((response) => {
         return response.json();
@@ -21,7 +25,6 @@ class Login extends Component {
       .then((data) => {
         form.reset();
         alert("Logged in Successfully");
-        console.log(data);
       })
       .catch((err) => {
         alert(`${form.name.value}, Please try to sign up first:)`);
@@ -43,7 +46,6 @@ class Login extends Component {
               >
                 Login
               </button>
-
               <button
                 type="reset"
                 value="Reset"
