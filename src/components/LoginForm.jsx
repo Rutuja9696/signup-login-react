@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-// import { render } from "react-dom";
-// import cardStyle from "../styles/Card.module.css";
 import FormElementStyles from "../styles/Form.module.css";
 
 class LoginForm extends Component {

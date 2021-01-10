@@ -27,7 +27,7 @@ class SignUp extends Component {
       })
       .then((data) => {
         form.reset();
-        alert("Signed up Successfully");
+        alert("Signed up Successfully.Please Login to continue!");
         console.log(data);
       })
       .catch((err) => {

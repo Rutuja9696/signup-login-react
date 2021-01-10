@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { render } from "react-dom";
 import FormElementStyles from "../styles/Form.module.css";
 
 class SignUpForm extends Component {

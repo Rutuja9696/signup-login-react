@@ -3,58 +3,22 @@
   display: flex;
   width: 100%;
   top: 0;
-  /* z-index: 9999; */
   position: fixed;
   text-align: center;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
   flex: 1 0 25%;
   padding: 0 15%;
 }
-/* #logo {
-  margin: 0;
-  width: 25%;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-} */
 #titlePart {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
 }
 #logo img {
   width: 25vw;
   height: 10vh;
   padding: 5px;
   margin: 1% 20%;
-  /* justify-content: center; */
 }
-/* #h1 {
-	margin: 10px;
-	color: white;
-} */
 .container {
   width: 100%;
 }
-/* menu*/
-/* #menu {
-	float: right;
-	width: 30%;
-	display: inline;
-	font-size: 20px;
-}
-#menu p {
-	float: left;
-	display: flex;
-	flex-direction: row;
-	padding-left: 500px;
-	color: white;
-}
-#menu p a {
-	padding-left: 20px;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: white;
-	cursor: default; */
-/* } */

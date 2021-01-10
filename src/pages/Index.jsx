@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import indexStyle from "../styles/Index.module.css";
+
 class Index extends Component {
   render() {
     return (

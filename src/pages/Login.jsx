@@ -2,6 +2,7 @@ import { Component } from "react";
 import LoginForm from "../components/LoginForm";
 import FormElementStyles from "../styles/Form.module.css";
 import url from "../components/ApiCall";
+const webUrl = "https://trainee-profile-pages.ialtafshaikh.vercel.app/";
 
 class Login extends Component {
   loginUser = (event) => {
@@ -26,6 +27,7 @@ class Login extends Component {
         form.reset();
         alert("Logged in Successfully");
       })
+
       .catch((err) => {
         alert(`${form.name.value}, Please try to sign up first:)`);
         alert(err);
