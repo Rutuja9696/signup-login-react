@@ -75,8 +75,8 @@ To Host the Project Vercel Platform is been used. View project demo [visit here]
 
 ```
 / : - home page.
-/user/signup : - to signup user.
-/user/login : - to login user.
+/signup : - to signup user.
+/login : - to login user.
 ```
 
 ## Authors

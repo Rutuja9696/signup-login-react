@@ -2,9 +2,12 @@ import { Component } from "react";
 import LoginForm from "../components/LoginForm";
 import FormElementStyles from "../styles/Form.module.css";
 import url from "../components/ApiCall";
-const webUrl = "https://trainee-profile-pages.ialtafshaikh.vercel.app/";
+import Home from "./Home";
 
 class Login extends Component {
+  state = {
+    status: "",
+  };
   loginUser = (event) => {
     event.preventDefault();
     let form = event.target;
@@ -24,10 +27,13 @@ class Login extends Component {
         return response.json();
       })
       .then((data) => {
-        form.reset();
-        alert("Logged in Successfully");
+        console.log(data);
+        if (data.data) {
+          this.setState({ status: "Successful" });
+          form.reset();
+          alert("Logged in Successfully");
+        }
       })
-
       .catch((err) => {
         alert(`${form.name.value}, Please try to sign up first:)`);
         alert(err);
@@ -36,28 +42,34 @@ class Login extends Component {
   };
   render() {
     return (
-      <div className={FormElementStyles.body}>
-        <div className={FormElementStyles.container}>
-          <form onSubmit={this.loginUser}>
-            <LoginForm />
-            <div className={FormElementStyles.buttons}>
-              <button
-                type="submit"
-                value="login"
-                className={FormElementStyles.button}
-              >
-                Login
-              </button>
-              <button
-                type="reset"
-                value="Reset"
-                className={FormElementStyles.button}
-              >
-                Reset
-              </button>
+      <div>
+        {this.state.status === "Successful" ? (
+          <Home />
+        ) : (
+          <div className={FormElementStyles.body}>
+            <div className={FormElementStyles.container}>
+              <form onSubmit={this.loginUser}>
+                <LoginForm />
+                <div className={FormElementStyles.buttons}>
+                  <button
+                    type="submit"
+                    value="login"
+                    className={FormElementStyles.button}
+                  >
+                    Login
+                  </button>
+                  <button
+                    type="reset"
+                    value="Reset"
+                    className={FormElementStyles.button}
+                  >
+                    Reset
+                  </button>
+                </div>
+              </form>
             </div>
-          </form>
-        </div>
+          </div>
+        )}
       </div>
     );
   }
