@@ -1,19 +1,21 @@
-.container.container {
+.container {
   display: flex;
   flex-direction: column;
   margin: 20px;
   margin-left: 10%;
   width: 80%;
+  height: auto;
   background: white;
   border-radius: 20px;
   box-shadow: 15px 15px 20px 15px black;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
-.container .buttons {
+.buttons {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .mainDiv {
