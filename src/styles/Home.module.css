@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-left: 10%;
+  width: 80%;
+  background: white;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.message {
+  color: black;
+  text-align: center;
+}
+.heading {
+  color: rgb(233, 50, 178);
+  text-align: center;
+}
+.text {
+  text-align: center;
+  color: rgb(46, 67, 184);
+}
